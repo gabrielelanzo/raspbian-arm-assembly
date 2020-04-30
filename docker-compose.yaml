@@ -1,0 +1,12 @@
+version: '3'
+services:
+  raspbian:
+    build:
+      context: ./config/
+      dockerfile: raspbian.docker
+    container_name: raspbian
+    volumes:
+      - ./src:/home/dev
+  gdbgui:
+    build: ./src
+    image: vahempio/gdbgui-arm
