@@ -1,2 +1,6 @@
 .DS_Store
 src/*
+
+# exception to the rule
+
+!src/.gitkeep 
